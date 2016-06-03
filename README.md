@@ -1,4 +1,4 @@
-# node-loggly
+# node-loggly-bulk
 
 [![Version npm](https://img.shields.io/npm/v/loggly.svg?style=flat-square)](https://www.npmjs.com/package/loggly)[![npm Downloads](https://img.shields.io/npm/dm/loggly.svg?style=flat-square)](https://www.npmjs.com/package/loggly)[![Build Status](https://img.shields.io/travis/winstonjs/node-loggly/master.svg?style=flat-square)](https://travis-ci.org/winstonjs/node-loggly)[![Dependencies](https://img.shields.io/david/winstonjs/node-loggly.svg?style=flat-square)](https://david-dm.org/winstonjs/node-loggly)
 
@@ -8,7 +8,7 @@ A client implementation for Loggly in node.js. Check out Loggly's [Node logging 
 
 ## Usage
 
-The `node-loggly` library is compliant with the [Loggly API][api]. Using `node-loggly` is easy for a variety of scenarios: logging, working with devices and inputs, searching, and facet searching.
+The `node-loggly-bulk` library is compliant with the [Loggly API][api]. Using `node-loggly-bulk` is easy for a variety of scenarios: logging, working with devices and inputs, searching, and facet searching.
 
 ### Getting Started
 Before we can do anything with Loggly, we have to create a client with valid credentials. We will authenticate for you automatically:
@@ -31,7 +31,7 @@ Before we can do anything with Loggly, we have to create a client with valid cre
 ```
 
 ### Logging
-There are two ways to send log information to Loggly via node-loggly. The first is to simply call client.log with an appropriate input token:
+There are two ways to send log information to Loggly via node-loggly-bulk. The first is to simply call client.log with an appropriate input token:
 
 ``` js
   client.log('127.0.0.1 - Theres no place like home', function (err, result) {
@@ -120,7 +120,7 @@ It is possible to send arrays, which will result in one single request to Loggly
 ```
 
 ### Searching
-[Searching][search-api] with node-loggly is easy. All you have to do is use the search() method defined on each Loggly client:
+[Searching][search-api] with node-loggly-bulk is easy. All you have to do is use the search() method defined on each Loggly client:
 
 ``` js
   var util = require('util');
@@ -152,13 +152,15 @@ See the [Loggly search guide][search] for more details on how to effectively sea
   $ curl http://npmjs.org/install.sh | sh
 ```
 
-### Installing node-loggly
+### Installing node-loggly-bulk
 ``` bash
   $ npm install loggly
 ```
 
 ## Run Tests
-All of the node-loggly tests are written in [vows][vows], and cover all of the use cases described above. You will need to add your Loggly username, password, subdomain, and a two test inputs to test/data/test-config.json before running tests. When configuring the test inputs on Loggly, the first test input should be named 'test' using the HTTP service. The second input should be name 'test_json' using the HTTP service with the JSON logging option enabled:
+
+### Run Tests by sending events to your Loggly Account
+All of the node-loggly-bulk tests are written in [vows][vows], and cover all of the use cases described above. You will need to add your Loggly username, password, subdomain, and your loggly token to test/config.json before running tests.
 
 ``` js
   {
@@ -175,6 +177,11 @@ Once you have valid Loggly credentials you can run tests with [vows][vows]:
 
 ``` bash
   $ npm test
+```
+### Run Tests with Mock HTTP Request
+To mock the HTTP requests and run test cases in your local machine you can run the following command
+```bash
+  $ npm run test-as-mock
 ```
 
 #### Author: [Charlie Robbins](http://www.github.com/indexzero)
