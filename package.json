@@ -1,11 +1,11 @@
 {
-  "name": "loggly",
+  "name": "node-loggly-bulk",
   "description": "A client implementation for Loggly cloud Logging-as-a-Service API",
   "version": "1.1.0",
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "http://github.com/winstonjs/node-loggly.git"
+    "url": "https://github.com/loggly/node-loggly-bulk.git"
   },
   "keywords": [
     "cloud computing",
