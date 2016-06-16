@@ -1,8 +1,8 @@
 # node-loggly-bulk
 
-[![Version npm](https://img.shields.io/npm/v/loggly.svg?style=flat-square)](https://www.npmjs.com/package/node-loggly-bulk)[![npm Downloads](https://img.shields.io/npm/dm/loggly.svg?style=flat-square)](https://www.npmjs.com/package/node-loggly-bulk)
+[![Version npm](https://img.shields.io/npm/v/node-loggly-bulk.svg?style=flat-square)](https://www.npmjs.com/package/node-loggly-bulk)[![npm Downloads](https://img.shields.io/npm/dm/node-loggly-bulk.svg?style=flat-square)](https://www.npmjs.com/package/node-loggly-bulk)
 
-[![NPM](https://nodei.co/npm/loggly.png?downloads=true&downloadRank=true)](https://nodei.co/npm/node-loggly-bulk/)
+[![NPM](https://nodei.co/npm/node-loggly-bulk.png?downloads=true&downloadRank=true)](https://nodei.co/npm/node-loggly-bulk/)
 
 A client implementation for Loggly in node.js. Check out Loggly's [Node logging documentation](https://www.loggly.com/docs/nodejs-logs/) for more.
 
