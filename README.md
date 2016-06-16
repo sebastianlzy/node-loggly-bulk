@@ -1,8 +1,8 @@
 # node-loggly-bulk
 
-[![Version npm](https://img.shields.io/npm/v/loggly.svg?style=flat-square)](https://www.npmjs.com/package/loggly)[![npm Downloads](https://img.shields.io/npm/dm/loggly.svg?style=flat-square)](https://www.npmjs.com/package/loggly)[![Build Status](https://img.shields.io/travis/winstonjs/node-loggly/master.svg?style=flat-square)](https://travis-ci.org/winstonjs/node-loggly)[![Dependencies](https://img.shields.io/david/winstonjs/node-loggly.svg?style=flat-square)](https://david-dm.org/winstonjs/node-loggly)
+[![Version npm](https://img.shields.io/npm/v/node-loggly-bulk.svg?style=flat-square)](https://www.npmjs.com/package/node-loggly-bulk)[![npm Downloads](https://img.shields.io/npm/dm/node-loggly-bulk.svg?style=flat-square)](https://www.npmjs.com/package/node-loggly-bulk)
 
-[![NPM](https://nodei.co/npm/loggly.png?downloads=true&downloadRank=true)](https://nodei.co/npm/loggly/)
+[![NPM](https://nodei.co/npm/node-loggly-bulk.png?downloads=true&downloadRank=true)](https://nodei.co/npm/node-loggly-bulk/)
 
 A client implementation for Loggly in node.js. Check out Loggly's [Node logging documentation](https://www.loggly.com/docs/nodejs-logs/) for more.
 
@@ -154,7 +154,7 @@ See the [Loggly search guide][search] for more details on how to effectively sea
 
 ### Installing node-loggly-bulk
 ``` bash
-  $ npm install loggly
+  $ npm install node-loggly-bulk
 ```
 
 ## Run Tests
