@@ -14,7 +14,7 @@ The `node-loggly-bulk` library is compliant with the [Loggly API][api]. Using `n
 Before we can do anything with Loggly, we have to create a client with valid credentials. We will authenticate for you automatically:
 
 ``` js
-  var loggly = require('loggly');
+  var loggly = require('node-loggly-bulk');
 
   var client = loggly.createClient({
     token: "your-really-long-input-token",
