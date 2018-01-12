@@ -1,8 +1,8 @@
 # Addition
 
-Ensure call back only once
+Ensure call back only once in client.js
 
-``` client.js
+``` javascript
 
 var callbackOnceOnly = (function() {
     var isCalled = false;
