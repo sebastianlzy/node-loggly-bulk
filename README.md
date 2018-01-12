@@ -1,3 +1,41 @@
+# Addition
+
+Ensure call back only once
+
+``` client.js
+
+var callbackOnceOnly = (function() {
+    var isCalled = false;
+    return function() {
+      if (!isCalled) {
+        isCalled = true;
+        var that = this;
+        callback.apply(null, arguments);
+      }
+    }
+  })();
+
+  common.loggly(logOptions, callbackOnceOnly, function (res, body) {
+    try {
+      if(body && res.statusCode.toString() === '200'){
+        var result = JSON.parse(body);
+        self.emit('log', result);
+        if (callback) {
+          callbackOnceOnly(null, result);
+        }
+      }
+      else
+       console.log('Error Code- ' + res.statusCode + ' "' + res.statusMessage + '"');
+    }
+    catch (ex) {
+      if (callback) {
+        callbackOnceOnly(new Error('Unspecified error from Loggly: ' + ex));
+      }
+    }
+  });
+
+```
+
 # node-loggly-bulk
 
 [![Version npm](https://img.shields.io/npm/v/node-loggly-bulk.svg?style=flat-square)](https://www.npmjs.com/package/node-loggly-bulk)[![npm Downloads](https://img.shields.io/npm/dm/node-loggly-bulk.svg?style=flat-square)](https://www.npmjs.com/package/node-loggly-bulk)
